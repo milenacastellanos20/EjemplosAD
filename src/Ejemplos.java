@@ -6,7 +6,7 @@ public class Ejemplos{
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Dime la ruta y el nombre del archivo: ");
-        String directorio = sc.nextLine(); //recuersa borrar las comillas de la ruta
+        String directorio = sc.nextLine(); //recuersa borrar las comillas de la rutaa
         System.out.println("Dime la cadena1: ");
         String cadena = sc.nextLine();
         System.out.println("Dime la cadena2: ");
