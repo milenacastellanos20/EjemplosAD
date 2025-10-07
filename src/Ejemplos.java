@@ -97,7 +97,19 @@ public class Ejemplos{
             throw new RuntimeException(e);
         }
     }
-    public static void ejemplo8(String ruta, String cadena1, String cadena2) {
-
+    public static void ejemplo8() {
+        try{
+            FileOutputStream fs = new FileOutputStream("prueba.dat");
+            for (int i = 0; i < 100; i++) {
+                if (i%7 == 0){
+                    fs.write(i);
+                }
+            }
+            fs.close();
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
