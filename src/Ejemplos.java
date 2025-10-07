@@ -97,4 +97,7 @@ public class Ejemplos{
             throw new RuntimeException(e);
         }
     }
+    public static void ejemplo8(String ruta, String cadena1, String cadena2) {
+
+    }
 }
