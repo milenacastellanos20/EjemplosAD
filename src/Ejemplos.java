@@ -105,7 +105,7 @@ public class Ejemplos{
                     fs.write(i);
                 }
             }
-            fs.close();
+            fs.close();//TODO hola dani
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         } catch (IOException e) {
