@@ -105,11 +105,28 @@ public class Ejemplos{
                     fs.write(i);
                 }
             }
-            fs.close();//TODO hola dani
+            fs.close();
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+    }
+    public static void ejemplo9() {
+        try {
+            FileInputStream fe = new FileInputStream("prueba.dat");
+            int entero = fe.read();
+            System.out.println("listado de numeros multiplos de 7: ");
+            while (entero != -1) {
+                System.out.print(entero);
+                fe.read();
+            }
+            fe.close();
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
     }
 }
